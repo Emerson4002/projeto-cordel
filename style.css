@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat+Alternates:wght@100;200&family=Nanum+Gothic+Coding&family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat+Alternates:wght@100;200&family=Nanum+Gothic+Coding&family=Passion+One&family=Sriracha&display=swap');
+
+  :root{
+
+      --fonte1: 'Passion One', cursive;
+      --fonte2: 'Sriracha', cursive;
+      --fonte3: Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+
+
+
+
+body{
+  min-height: 100vh;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1em;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.952);
+    color: white;
+    font-family: var(--fonte1);
+    text-align: center;
+    padding-top:50px;
+    
+    font-size: 8.5em;
+}
+header>h1{
+  font-variant:small-caps ;
+letter-spacing: 4.5px;
+font-weight: bold;
+}
+header p{
+  font-size: 16px;
+  font-family: var(--fonte3);
+  margin-top: 0px;
+  padding-bottom: 50px;
+  
+}
+ header a{ 
+     color: white;
+     text-decoration: none;
+     font-family: var(--fonte3);
+     font-size: 16px;
+     font-weight: bold;
+    }
+ section{
+  font-size: 47px;
+  display: block;
+  font-family: var(--fonte2);
+  line-height:2em;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 30px;
+
+}
+section > p{
+  margin-top: 1.2em;
+
+}
+section, #img1, #img2{
+
+padding: 0px;
+padding-bottom:60px;
+padding-left: 30px;
+}
+.imagem > p{
+    width: 40%;
+    background-color: #00000075;
+    padding: 1em;
+
+}
+.imagem section{
+  margin-top: 0px;
+}
+
+.imagem{
+  color: white;
+  
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0px;
+  margin-top: 2em;
+
+}
+
+#img1{
+  background-image: url(imagens/background001.jpg);
+  
+
+}
+#img2{
+  background-image: url(imagens/background002.jpg);
+}
+ footer{
+   background-color: black;
+   color: white;
+   text-align: center;
+   padding: 8px;
+   font-size: 1.3em;
+ }
+ footer a{
+   text-decoration: none;
+   color: white;
+ }
