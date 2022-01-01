@@ -27,7 +27,7 @@ header{
     font-family: var(--fonte1);
     text-align: center;
     padding-top:50px;
-    
+    box-shadow: -4px 6px 15px 2px #00000057;
     font-size: 8.5em;
 }
 header>h1{
@@ -91,11 +91,12 @@ padding-left: 30px;
 
 #img1{
   background-image: url(imagens/background001.jpg);
-  
+  box-shadow: -4px 6px 11px 2px #0000007a;
 
 }
 #img2{
   background-image: url(imagens/background002.jpg);
+  box-shadow: -4px 6px 11px 2px #0000007a;
 }
  footer{
    background-color: black;
