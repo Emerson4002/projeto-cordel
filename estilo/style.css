@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/* é uma boa zerar o margin e padding evita dor de cabeça  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    min-height: 100vh;
+    background-color: darkgrey;
+    text-align: center;
+}
+/* seletor de filhos ">" é um combinador que seleciona os filhos diretos do elemento especificado ex: ul > li irá corresponder a todo elemento <li> dentro diretamente do elemento <ul> especificado */
+
+/* font-variant > faz com que todas as letras se torne maiuscula mas toda primeira letra vai ser maior  */
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+header > p{
+    padding-bottom: 50px;
+}
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+/* vh > é a unidade de medida com base na altura da viewport tem tambem vw que a largura */
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    text-align: left;
+    line-height: 2em;
+    padding-left: 30px;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgba(24, 23, 23, 0.527);
+    color: white;
+}
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(58, 58, 58, 0.61);
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
