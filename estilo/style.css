@@ -1,25 +1,47 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat+Alternates:wght@100;200&family=Nanum+Gothic+Coding&family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat+Alternates:wght@100;200&family=Nanum+Gothic+Coding&family=Passion+One&family=Sriracha&display=swap');
+
+/* aqui é onde vai ficar as variaveis  */
+:root{
+        --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+        --fonte2: 'Passion One', cursive;
+        --fonte3: 'Sriracha', cursive;
+
+}
+
 /* é uma boa zerar o margin e padding evita dor de cabeça  */
 *{
     margin: 0px;
     padding: 0px;
+    
 }
 
 html,body{
     min-height: 100vh;
     background-color: darkgrey;
     text-align: center;
+    font-family: var(--fonte1);
 }
 /* seletor de filhos ">" é um combinador que seleciona os filhos diretos do elemento especificado ex: ul > li irá corresponder a todo elemento <li> dentro diretamente do elemento <ul> especificado */
 
 /* font-variant > faz com que todas as letras se torne maiuscula mas toda primeira letra vai ser maior  */
+header{
+    background-color: black;
+}
 header > h1{
+    color: white;
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
+    
+    
 }
 header > p{
     padding-bottom: 50px;
+    color: white;
 }
 header a, footer a{
     color: white;
@@ -30,12 +52,18 @@ header a:hover, footer a:hover{
     text-decoration: underline;
 }
 /* vh > é a unidade de medida com base na altura da viewport tem tambem vw que a largura */
+/* perceba que usei a unidade de medida vw que é a largura da viewport */
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     text-align: left;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+section > p{
+    padding-bottom: 2em;
 }
 section.normal{
     background-color: white;
@@ -44,10 +72,23 @@ section.normal{
 section.imagem{
     background-color: rgba(24, 23, 23, 0.527);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.377);
+    background-size: cover;
+    background-attachment: fixed;
 }
 section.imagem > p {
-    width: 400px;
-    background-color: rgba(58, 58, 58, 0.61);
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.61);
+    
+}
+section#img0{
+    background-image: url(/imagens/background001.jpg);
+    background-position: right center;
+}
+section#img1{
+    background-image: url(/imagens/background002.jpg);
+    background-position: right center;
 }
 footer{
     background-color: black;

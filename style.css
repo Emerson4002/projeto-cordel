@@ -2,110 +2,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat+Alternates:wght@100;200&family=Nanum+Gothic+Coding&family=Passion+One&family=Sriracha&display=swap');
 
   :root{
-
-      --fonte1: 'Passion One', cursive;
-      --fonte2: 'Sriracha', cursive;
-      --fonte3: Verdana, Geneva, Tahoma, sans-serif;
+      --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+      --fonte2: 'Passion One', cursive;
+      --fonte3: 'Sriracha', cursive;
 
   }
 
-
-
-
-body{
-  min-height: 100vh;
-}
 * {
   margin: 0px;
   padding: 0px;
-  font-size: 1em;
 }
-
-header{
-    background-color: rgba(0, 0, 0, 0.952);
-    color: white;
-    font-family: var(--fonte1);
+html, body{
+    background-color: rgb(216, 216, 216);
+    min-height: 100vh;
     text-align: center;
-    padding-top:50px;
-    box-shadow: -4px 6px 15px 2px #00000057;
-    font-size: 8.5em;
+    font-family: var(--fonte1);
 }
-header>h1{
-  font-variant:small-caps ;
-letter-spacing: 4.5px;
-font-weight: bold;
-}
-header p{
-  font-size: 16px;
-  font-family: var(--fonte3);
-  margin-top: 0px;
-  padding-bottom: 50px;
+header{
+  background-color: black;
   
 }
- header a{ 
-     color: white;
-     text-decoration: none;
-     font-family: var(--fonte3);
-     font-size: 16px;
-     font-weight: bold;
-    }
- section{
-  font-size: 47px;
-  display: block;
+header > h1{
+  color: white;
+  padding-top: 50px;
   font-family: var(--fonte2);
-  line-height:2em;
+  font-variant: small-caps;
+  font-size: 10vw;
+
+}
+header > p{
+  color: white;
+  padding-bottom: 50px;
+}
+header a, footer a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+header a:hover, footer a:hover{
+  text-decoration: underline;
+}
+section{
   padding-top: 10vh;
   padding-bottom: 10vh;
+  text-align: left;
+  line-height: 2em;
   padding-left: 30px;
-
+  font-family: var(--fonte3);
+  font-size: 3.5vw;
 }
 section > p{
-  margin-top: 1.2em;
-
+  padding-bottom: 2em;
 }
-section, #img1, #img2{
-
-padding: 0px;
-padding-bottom:60px;
-padding-left: 30px;
+section.normal{
+  background-color: white;
+  color: black;
 }
-.imagem > p{
-    width: 40%;
-    background-color: #00000075;
-    padding: 1em;
-
-}
-.imagem section{
-  margin-top: 0px;
-}
-
-.imagem{
+section.imagem{
+  background-color: rgba(0, 0, 0, 0.534);
   color: white;
-  
-  background-size: cover;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.377);
   background-attachment: fixed;
-  margin: 0px;
-  margin-top: 2em;
+  background-size: cover;
 
 }
-
-#img1{
+section.imagem > p{
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  color: white;
+  padding: 10px;
+}
+section#img1{
   background-image: url(imagens/background001.jpg);
-  box-shadow: -4px 6px 11px 2px #0000007a;
-
+  background-position: right center;
 }
-#img2{
+section#img2{
   background-image: url(imagens/background002.jpg);
-  box-shadow: -4px 6px 11px 2px #0000007a;
+  background-position: right center;
 }
- footer{
-   background-color: black;
-   color: white;
-   text-align: center;
-   padding: 8px;
-   font-size: 1.3em;
- }
- footer a{
-   text-decoration: none;
-   color: white;
- }
+footer{
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+ 
